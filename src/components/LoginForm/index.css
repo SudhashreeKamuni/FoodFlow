@@ -1,0 +1,190 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: #ffffff;
+}
+
+/* =========================
+   LEFT SIDE - LOGIN
+   ========================= */
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+  padding: 40px 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #ffffff;
+}
+
+.login-logo {
+  width: 95px;
+  height: auto;
+
+  margin: 0 auto 12px;
+
+  object-fit: contain;
+}
+
+.login-card > p {
+  margin: 0 0 30px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+/* =========================
+   FORM
+   ========================= */
+
+.login-card form {
+  width: 100%;
+
+  margin: 0;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+
+  border-radius: 5px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-card form label {
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+.login-card form input {
+  width: 100%;
+  height: 38px;
+
+  margin-bottom: 18px;
+  padding: 0 10px;
+
+  border: none;
+  border-radius: 2px;
+
+  background-color: #e8edf3;
+
+  color: #1e293b;
+
+  font-size: 12px;
+
+  outline: none;
+}
+
+.login-card form input:focus {
+  background-color: #e2e8f0;
+
+  box-shadow: 0 0 0 1px #f7931e;
+}
+
+.login-card form input::placeholder {
+  color: #94a3b8;
+}
+
+/* Error */
+
+.login-card .login-error {
+  margin: -5px 0 12px;
+
+  color: #ef4444;
+
+  font-size: 11px;
+}
+
+/* Login button */
+
+.login-card form button {
+  width: 100%;
+  height: 38px;
+
+  margin-top: 5px;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #f7931e;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-card form button:hover {
+  background-color: #e6820c;
+}
+
+.login-card form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =========================
+   RIGHT SIDE - IMAGE
+   ========================= */
+
+.login-image-container {
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background-color: #f8fafc;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 800px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card {
+    min-height: auto;
+
+    padding: 50px 25px;
+  }
+
+  .login-image-container {
+    display: none;
+  }
+}

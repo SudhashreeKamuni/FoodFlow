@@ -1,0 +1,30 @@
+.cart-empty {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.cart-empty-content {
+  text-align: center;
+  max-width: 450px;
+}
+
+.cart-empty-content h1 {
+  margin-bottom: 12px;
+}
+
+.cart-empty-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.cart-empty-content button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
